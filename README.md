@@ -1,5 +1,7 @@
 # Portfolio – Next.js (Frontend) + Drupal 11 (Backend) with Lando
 
+version 1.0.0
+
 A small **portfolio** project using **Drupal 11** as a headless CMS (via **JSON:API**) and a **Next.js** frontend.
 
 Content types:
