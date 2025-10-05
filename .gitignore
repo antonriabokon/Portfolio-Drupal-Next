@@ -1,0 +1,18 @@
+# Node/Next
+frontend/node_modules
+frontend/.next
+frontend/.vercel
+frontend/.env.local
+
+# Drupal build artifacts
+drupal/vendor/
+drupal/web/sites/default/files/*
+!public-files.tar.gz
+
+# OS/Editor
+.DS_Store
+*.log
+
+# DB dumps
+*.sql
+*.sql.gz

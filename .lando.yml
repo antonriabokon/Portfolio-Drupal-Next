@@ -1,0 +1,17 @@
+name: portfolio
+recipe: lamp
+config:
+  webroot: drupal/web
+  php: "8.3"
+  via: apache:2.4
+services:
+  database:
+    type: mariadb:10.6
+  appservice:
+    type: phpmyadmin
+tooling:
+  composer:
+    service: appserver
+  drush:
+    service: appserver
+    cmd: /app/drupal/vendor/bin/drush

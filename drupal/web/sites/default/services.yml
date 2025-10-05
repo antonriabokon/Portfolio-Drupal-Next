@@ -1,0 +1,67 @@
+parameters:
+  # Toggles the super user access policy. If your website has at least one user
+  # with the Administrator role, it is advised to set this to false. This allows
+  # you to make user 1 a regular user, strengthening the security of your site.
+  security.enable_super_user: true
+
+  session.storage.options:
+    gc_probability: 1
+    gc_divisor: 100
+    gc_maxlifetime: 200000
+    cookie_lifetime: 2000000
+    cookie_samesite: Lax
+    name_suffix: ""
+
+  twig.config:
+    debug: false
+    auto_reload: null
+    cache: true
+    allowed_file_extensions:
+      - css
+      - html
+      - js
+      - svg
+      - twig
+
+  renderer.config:
+    required_cache_contexts:
+      ["languages:language_interface", "theme", "user.permissions"]
+    auto_placeholder_conditions:
+      max-age: 0
+      contexts: ["session", "user"]
+      tags: []
+    debug: false
+
+  http.response.debug_cacheability_headers: false
+
+  factory.keyvalue: {}
+  factory.keyvalue.expirable: {}
+  filter_protocols:
+    - http
+    - https
+    - ftp
+    - news
+    - nntp
+    - tel
+    - telnet
+    - mailto
+    - irc
+    - ssh
+    - sftp
+    - webcal
+    - rtsp
+
+  # Configure Cross-Site HTTP requests (CORS)
+  cors.config:
+    enabled: true
+    allowedHeaders: ["x-csrf-token", "content-type", "authorization"]
+    allowedMethods: ["GET", "POST", "PATCH", "DELETE", "OPTIONS"]
+    allowedOrigins: ["http://localhost:3000"]
+    exposedHeaders: false
+    maxAge: 1000
+    supportsCredentials: true
+
+  entity.memory_cache.slots: 1000
+
+  queue.config:
+    suspendMaximumWait: 30
