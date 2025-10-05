@@ -55,5 +55,7 @@ The Contact form uses a Next.js API route to POST to Drupal’s Contact endpoint
 phpMyAdmin port varies — check via lando info.
 
 ![PHP](https://img.shields.io/badge/PHP-8.3-777BB4?logo=php&logoColor=white)
+
 ![Lando](https://img.shields.io/badge/Lando-Dev%20Tool-blue?logo=lando&logoColor=white)
+
 ![Next.js](https://img.shields.io/badge/Next.js-Framework-000000?logo=next.js&logoColor=white)
