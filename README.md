@@ -58,4 +58,4 @@ phpMyAdmin port varies — check via lando info.
 
 ![Lando](https://img.shields.io/badge/Lando-Dev%20Tool-blue?logo=lando&logoColor=white)
 
-![Next.js](https://img.shields.io/badge/Next.js-Framework-000000?logo=next.js&logoColor=white)
+![Next.js](https://img.shields.io/badge/Next.js-Framework-green?logo=next.js&logoColor=white)
